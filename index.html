@@ -1,21 +1,152 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial scale=1,0"
-    <title>My First GitHub Page</title>
-    </head>
-    <body>
-    <header>
-        <h1>Welcome to My Website!</h1>
-    </header>
-    <main>
-    <p>This is a simple webpage hosted on GitHub Pages.</p>
-    <p>Here's a picture of a cute cat</p>
-    <img src="https://placekitten.com/200/300"alt="A cute kitten">
-    <p>Visit <a href="https://github.com">GitHub</a>to learn more about coding.</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 Your Name</p>
-    </footer>
-    </body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OLYMPUS — Raw Expression, Designed for the World</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Barlow+Condensed:wght@300;400;500;700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" onclick="showPage('intro')">OLYMPUS</a>
+  <ul class="nav-links">
+    <li><a onclick="showPage('home')">Shop</a></li>
+    <li><a onclick="showPage('about')">About</a></li>
+    <li><a onclick="showPage('contact')">Contact</a></li>
+  </ul>
+  <button class="cart-btn" onclick="showPage('cart')">
+    Cart
+    <span class="cart-count" id="cart-count">0</span>
+  </button>
+</nav>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- ==================== INTRO PAGE ==================== -->
+<div class="page active" id="page-intro">
+  <div class="intro-bg" id="intro-bg"></div>
+  <div class="intro-overlay"></div>
+  <div class="intro-content">
+    <div class="intro-eyebrow">Olympus Garments — Est. 2024</div>
+    <div class="intro-title">OLY<span>MPUS</span></div>
+    <div class="intro-sub">Garments</div>
+    <div class="intro-slogan">Raw Expression, Designed for the World</div>
+    <div class="intro-nav">
+      <button class="intro-btn intro-btn-primary" onclick="showPage('home')">Explore Collection</button>
+      <button class="intro-btn intro-btn-secondary" onclick="showPage('about')">Our Story</button>
+      <button class="intro-btn intro-btn-secondary" onclick="showPage('contact')">Contact</button>
+    </div>
+  </div>
+  <div class="intro-scroll" onclick="showPage('home')">
+    <span>Explore</span>
+    <div class="scroll-line"></div>
+  </div>
+</div>
+
+<!-- ==================== HOME PAGE ==================== -->
+<div class="page" id="page-home">
+  <div class="hero">
+    <div class="hero-tape">Limited Edition Drop — SS2025 Collection Now Live</div>
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-tag">New Collection</div>
+      <h1 class="hero-title">AMPLIFY<br>YOUR <span class="accent">VOICE</span></h1>
+      <p class="hero-desc">Bold, limited-edition streetwear that bridges art and urban culture. Ethically produced. Globally expressed.</p>
+      <button class="btn-gold" onclick="document.getElementById('collection').scrollIntoView({behavior:'smooth'})">View Collection</button>
+    </div>
+    <img class="hero-corner-img" id="hero-img" alt="Olympus Garments">
+  </div>
+
+  <div class="cat-strip" id="cat-strip">
+    <button class="cat-item active" onclick="filterCat('All', this)">All</button>
+    <button class="cat-item" onclick="filterCat('Hoodie', this)">Winter wear</button>
+    <button class="cat-item" onclick="filterCat('Jeans', this)">Pants</button>
+    <button class="cat-item" onclick="filterCat('Shirt', this)">Tops</button>
+  </div>
+
+  <div class="section-header" id="collection">
+    <h2 class="section-title">THE COLLECTION</h2>
+    <span class="section-count" id="collection-count">12 PIECES</span>
+  </div>
+
+  <div class="collection-grid" id="collection-grid"></div>
+
+  <!-- QUALITY SECTION -->
+  <div class="quality-section">
+    <div>
+      <div class="quality-heading">470gsm</div>
+      <p class="quality-body">
+        Our signature fabric weight defines the Olympus standard. 470gsm is a heavyweight construction renowned for its robustness, premium hand-feel, and lasting durability — built for the streets, made to endure. The density ensures every piece retains its structure through years of wear, making it the ideal choice for those who demand both luxury and longevity.
+      </p>
+      <p class="quality-body" style="margin-bottom:0">
+        Opting for 470gsm fabric is a commitment to a more luxurious feel and appearance — a garment that commands presence. Select pieces in our range feature this standard, denoted clearly on each product card.
+      </p>
+      <div class="quality-points">
+        <div class="quality-point">
+          <div class="quality-point-label">Fabric Weight</div>
+          <div class="quality-point-val">470gsm Heavyweight</div>
+        </div>
+        <div class="quality-point">
+          <div class="quality-point-label">Durability</div>
+          <div class="quality-point-val">Long-lasting</div>
+        </div>
+        <div class="quality-point">
+          <div class="quality-point-label">Ethics</div>
+          <div class="quality-point-val">Ethically Sourced</div>
+        </div>
+        <div class="quality-point">
+          <div class="quality-point-label">Packaging</div>
+          <div class="quality-point-val">Zero Waste</div>
+        </div>
+      </div>
+    </div>
+    <img id="quality-img" alt="Quality 470gsm fabric">
+  </div>
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div>
+    <div class="footer-brand">OLYMPUS</div>
+    <p class="footer-slogan">Raw Expression, Designed for the World</p>
+  </div>
+  <div>
+    <div class="footer-col-title">Navigate</div>
+    <ul class="footer-col-links">
+      <li><a onclick="showPage('intro')">Introduction</a></li>
+      <li><a onclick="showPage('home')">Collection</a></li>
+      <li><a onclick="showPage('about')">About</a></li>
+      <li><a onclick="showPage('contact')">Contact</a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="footer-col-title">Information</div>
+    <ul class="footer-col-links">
+      <li><a href="#">Shipping Policy</a></li>
+      <li><a href="#">Returns & Exchanges</a></li>
+      <li><a href="#">Size Guide</a></li>
+      <li><a href="#">Product Care</a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="footer-col-title">Community</div>
+    <ul class="footer-col-links">
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Artist Collabs</a></li>
+      <li><a href="#">Drop Alerts</a></li>
+      <li><a href="#">Sustainability</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-copy">
+  <span>© 2025 Olympus Garments. All rights reserved.</span>
+  <span>Raw Expression, Designed for the World.</span>
+</div>
+</body>
 </html>
