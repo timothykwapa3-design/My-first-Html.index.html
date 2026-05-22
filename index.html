@@ -2,159 +2,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OLYMPUS — Raw Expression, Designed for the World</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Barlow+Condensed:wght@300;400;500;700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLYMPUS GARMETS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
 </head>
-  <header>
-  <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="cart.html">Cart</a>
-    </nav>
-</header>
 <body>
+    <div class="header">
 
-<!-- NAV -->
-<nav>
-  <a class="nav-logo" onclick="showPage('intro')">OLYMPUS</a>
-  <ul class="nav-links">
-    <li><a onclick="showPage('home')">Shop</a></li>
-    <li><a onclick="showPage('about')">About</a></li>
-    <li><a onclick="showPage('contact')">Contact</a></li>
-  </ul>
-  <button class="cart-btn" onclick="showPage('cart')">
-    Cart
-    <span class="cart-count" id="cart-count">0</span>
-  </button>
-</nav>
-
-<!-- TOAST -->
-<div class="toast" id="toast"></div>
-
-<!-- ==================== INTRO PAGE ==================== -->
-<div class="page active" id="page-intro">
-  <div class="intro-bg" id="intro-bg"></div>
-  <div class="intro-overlay"></div>
-  <div class="intro-content">
-    <div class="intro-eyebrow">Olympus Garments — Est. 2024</div>
-    <div class="intro-title">OLY<span>MPUS</span></div>
-    <div class="intro-sub">Garments</div>
-    <div class="intro-slogan">Raw Expression, Designed for the World</div>
-    <div class="intro-nav">
-      <button class="intro-btn intro-btn-primary" onclick="showPage('home')">Explore Collection</button>
-      <button class="intro-btn intro-btn-secondary" onclick="showPage('about')">Our Story</button>
-      <button class="intro-btn intro-btn-secondary" onclick="showPage('contact')">Contact</button>
+   
+    <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <img src="images/OG LOGO.webp" width="125px">
+            <span class="brand-name">OLYMPUS GARMETS</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Intro.html">Intro</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <img src="images/shopping-cart-svg-png-icon-download-28.png"width="25px" height="25px">
     </div>
-  </div>
-  <div class="intro-scroll" onclick="showPage('home')">
-    <span>Explore</span>
-    <div class="scroll-line"></div>
-  </div>
+    <div class="row">
+        
+        <div class="col-2">
+            <h1>WEAR THE CITY. <br>OWN THE NOISE.</h1>
+            <p>This isn't just clothing — it's a statement. Every piece we drop is designed for the ones who move with
+                 purpose, dress with intention, and never apologize for standing out. The streets shaped us.
+                  Now we're giving that back to you.</p>
+                  <a href=""class="btn">EXPLORE NOW &#8594;</a>
+        </div>
+        <div class="col-2">
+            <img src="images/Tshirt1.jpg">
+        </div>
+        
+    </div>
+    
+    </div>
+    </div>
+
+   <!----------------- featured category ----------------->
+<div class="categories">
+    <div class="container">
+        <div class="small-container"><div class="row">
+            <div class="col-3">
+                <img src="images/Shirt2.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/Pants4.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/Sweater3.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/Hoodie2.jpg">
+            </div>
+        </div></div>
+        
+    </div>
 </div>
+    
+    <!------featured products------->
 
-<!-- ==================== HOME PAGE ==================== -->
-<div class="page" id="page-home">
-  <div class="hero">
-    <div class="hero-tape">Limited Edition Drop — SS2025 Collection Now Live</div>
-    <div class="hero-bg-grid"></div>
-    <div class="hero-content">
-      <div class="hero-tag">New Collection</div>
-      <h1 class="hero-title">AMPLIFY<br>YOUR <span class="accent">VOICE</span></h1>
-      <p class="hero-desc">Bold, limited-edition streetwear that bridges art and urban culture. Ethically produced. Globally expressed.</p>
-      <button class="btn-gold" onclick="document.getElementById('collection').scrollIntoView({behavior:'smooth'})">View Collection</button>
+    <div class="featured-products">
+        <div class="small-container">
+        <h2>Built for the streets. Ready for whatever.</h2>
+        <h3>No rules. Just fits.</h3>
+        <h5>Drop. Wear. Repeat.</h5>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/download (12) 1.jpg">
+                 </div>
+               <div class="col-4">
+                <h4>
+Mass production killed the vibe. That's why we keep our runs tight and our standards higher. Every
+ piece goes through the same ruthless quality check — if it doesn't hit right, it doesn't ship.
+  You're not buying a garment. You're buying into something that actually means something.</h4>
+               
+            </div>
+        </div>
     </div>
-    <img class="hero-corner-img" id="hero-img" alt="Olympus Garments">
-  </div>
-
-  <div class="cat-strip" id="cat-strip">
-    <button class="cat-item active" onclick="filterCat('All', this)">All</button>
-    <button class="cat-item" onclick="filterCat('Hoodie', this)">Winter wear</button>
-    <button class="cat-item" onclick="filterCat('Jeans', this)">Pants</button>
-    <button class="cat-item" onclick="filterCat('Shirt', this)">Tops</button>
-  </div>
-
-  <div class="section-header" id="collection">
-    <h2 class="section-title">THE COLLECTION</h2>
-    <span class="section-count" id="collection-count">12 PIECES</span>
-  </div>
-
-  <div class="collection-grid" id="collection-grid"></div>
-
-  <!-- QUALITY SECTION -->
-  <div class="quality-section">
-    <div>
-      <div class="quality-heading">470gsm</div>
-      <p class="quality-body">
-        Our signature fabric weight defines the Olympus standard. 470gsm is a heavyweight construction renowned for its robustness, premium hand-feel, and lasting durability — built for the streets, made to endure. The density ensures every piece retains its structure through years of wear, making it the ideal choice for those who demand both luxury and longevity.
-      </p>
-      <p class="quality-body" style="margin-bottom:0">
-        Opting for 470gsm fabric is a commitment to a more luxurious feel and appearance — a garment that commands presence. Select pieces in our range feature this standard, denoted clearly on each product card.
-      </p>
-      <div class="quality-points">
-        <div class="quality-point">
-          <div class="quality-point-label">Fabric Weight</div>
-          <div class="quality-point-val">470gsm Heavyweight</div>
-        </div>
-        <div class="quality-point">
-          <div class="quality-point-label">Durability</div>
-          <div class="quality-point-val">Long-lasting</div>
-        </div>
-        <div class="quality-point">
-          <div class="quality-point-label">Ethics</div>
-          <div class="quality-point-val">Ethically Sourced</div>
-        </div>
-        <div class="quality-point">
-          <div class="quality-point-label">Packaging</div>
-          <div class="quality-point-val">Zero Waste</div>
-        </div>
-      </div>
     </div>
-    <img id="quality-img" alt="Quality 470gsm fabric">
-  </div>
-</div>
 
-<!-- ==================== FOOTER ==================== -->
+    <!-- FOOTER -->
 <footer>
-  <div>
-    <div class="footer-brand">OLYMPUS</div>
-    <p class="footer-slogan">Raw Expression, Designed for the World</p>
-  </div>
-  <div>
-    <div class="footer-col-title">Navigate</div>
-    <ul class="footer-col-links">
-      <li><a onclick="showPage('intro')">Introduction</a></li>
-      <li><a onclick="showPage('home')">Collection</a></li>
-      <li><a onclick="showPage('about')">About</a></li>
-      <li><a onclick="showPage('contact')">Contact</a></li>
-    </ul>
-  </div>
-  <div>
-    <div class="footer-col-title">Information</div>
-    <ul class="footer-col-links">
-      <li><a href="#">Shipping Policy</a></li>
-      <li><a href="#">Returns & Exchanges</a></li>
-      <li><a href="#">Size Guide</a></li>
-      <li><a href="#">Product Care</a></li>
-    </ul>
-  </div>
-  <div>
-    <div class="footer-col-title">Community</div>
-    <ul class="footer-col-links">
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">Artist Collabs</a></li>
-      <li><a href="#">Drop Alerts</a></li>
-      <li><a href="#">Sustainability</a></li>
-    </ul>
-  </div>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Olympus Garments</h4>
+                <p>Built for the streets. Ready for whatever. No rules. Just fits.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="products.html#shirts">Shirts</a></li>
+                    <li><a href="products.html#pants">Pants</a></li>
+                    <li><a href="products.html#hoodies">Hoodies</a></li>
+                    <li><a href="products.html#sweaters">Sweaters</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Info</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="intro.html">Latest Drops</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Gaborone, Botswana<br>info@olympusgarments.com<br>+267 XXX XXXX</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Olympus Garments. All rights reserved.</p>
+            <p>Wear the city. Own the noise.</p>
+        </div>
+    </div>
 </footer>
-<div class="footer-copy">
-  <span>© 2025 Olympus Garments. All rights reserved.</span>
-  <span>Raw Expression, Designed for the World.</span>
-</div>
+
+    
+
+
+
 </body>
 </html>
